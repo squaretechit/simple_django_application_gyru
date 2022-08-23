@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<!-- First Section Start -->
+<section class="firstSec py-5">
+    <div class="container">
+        <img src="{% static 'img/firstsection.png' %}" alt="">
+    </div>
+</section>
+<!-- First Section End -->
+<!-- Second Section Start -->
+<section class="secondSec">
+    <video autoplay muted loop id="myVideo">
+        <source src="{% static 'video/homePageSecondSection.mp4' %}" type="video/mp4">
+        Your browser does not support animation.
+    </video>
+    <div class="btnSecondSec">
+        <a href="https://apps.apple.com/gb/app/gyru/id1446210749" target="blank">
+            <img src="{% static 'img/homePageSecBtn.png' %}" alt="App button">
+        </a>
+    </div>
+</section>
+<!-- Second Section End -->
+<!-- ===================================== 4th section start ===================================== -->
+<div class="container">
+    <div class="learners-area">
+        <div class="learners-img">
+            <img src="{% static 'img/card/postcode.jpeg' %}" alt="">
+        </div>
+        <div class="learners-documentation">
+            <div class="learners-first-section">
+                <p class="learners-area-header"> For Learners :</p>
+                <span class="yellow-color"> </span>
+                <ul class="learners-area-list">
+                    <li>All instructors at you <span class="bold-text">finger tips.</span></li>
+                    <li>Find the instructors who finds <span class="bold-text"> your potential.</span></li>
+                    <li><span class="bold-text">Easy Signup.</span></li>
+                    <li>Block booking with <span class="bold-text">10% discount</span></li>
+                    <li><span class="bold-text">Better</span> Lesson <span class="bold-text">Price</span> than the
+                        high street , because no franchise fee , no office cost <br> and we reduce the dead milage
+                        for Instructors</li>
+                    <li>Instructors qualification fully Checked and displayed on app</li>
+                    <li>Contact Us through the app <span class="bold-text">seamlessly</span></li>
+                    <li>App is <span class="bold-text">Free</span> and <span class="bold-text">Tiny</span> storage
+                        size</li>
+                </ul>
+            </div>
+            <div class="learners-first-section learners-second-section">
+                <p class="learners-area-header"> Finding a driving instructors is easy</p>
+
+                <ul class="learners-area-list learners-area-list-two">
+                    <li> <i class="fas fa-minus"></i> just open the app and select find instructors</li>
+                    <li> <i class="fas fa-minus"></i> type in the <span class="bold-text"> postcode</span></li>
+                    <li> <i class="fas fa-minus"></i> List of most driving Instructors near that post code will pop
+                        up on the screen</span></li>
+                    <li> <i class="fas fa-minus"></i> Select your preferred driving instructors by checking price,
+                        distance ,qualification etc.</li>
+                    <li> <i class="fas fa-minus"></i> book the driving instructors through<span class="bold-text">in
+                            app chat, phone call or pre assigned time slot.</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===================================== 4th section end ===================================== -->
+<!-- ===================================== 5th section start ===================================== -->
+<div class="container">
+    <div class="learners-area">
+        <div class="learners-img">
+            <img src="{% static 'img/card/profile.png' %}" alt="">
+        </div>
+        <div class="learners-documentation">
+            <div class="learners-first-section">
+                <div class="video">
+                    <video width="100%" height="500" poster="{% static '/video/cover.png' %}" controls>
+                        <source src="{% static 'video/WhatsApp-Video-2019-09-09-at-4.37.36-PM.mp4' %}" type="video/mp4">
+                        <source src="{% static 'video/WhatsApp-Video-2019-09-09-at-4.37.36-PM.mp4' %}" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </div>
+
+            <div class="learners-first-section learners-second-section">
+                <p class="learners-area-header">
+                    For Instructors /Partners: </p>
+                <span class="yellow-color"> </span>
+                <ul class="learners-area-list">
+                    <li>All learners near you <span class="bold-text">Gathered</span> by postcode</li>
+                    <li><span class="bold-text">No franchise fee</span> to pay fortune</li>
+                    <li>No long drive for a single lesson</li>
+                    <li>Instruct as much <span class="bold-text">as you prefer</span></li>
+                    <li>Set your <span class="bold-text">own schedule</span> </li>
+                    <li><span class="bold-text">No contract</span> necessary to use the app.</li>
+                    <li>Start lesson where you end lesson by reducing <span class="bold-text">Dead mileage</span>
+                    </li>
+                    <li><span class="bold-text">Easy sign up
+                        </span></li>
+                    <li>App is <span class="bold-text">Free</span> and <span class="bold-text">Tiny</span> storage
+                        size</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===================================== 5th section end ===================================== -->
+<!-- ===================================== 6th section end ===================================== -->
+<div class="apps-prosses py-5">
+    <div class="container">
+        <h2 class="text-center">APP SCREENSHOTS</h2>
+        <div class="card-slider-wapper">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="d-block w-100 cards-slider-area d-flex justify-content-between">
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/1.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/I2.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/I3.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/I4.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/I5.png' %}" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-block w-100 cards-slider-area d-flex justify-content-between">
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/I5.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/l6.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/l7.jpeg' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/l8.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/l9.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-block w-100 cards-slider-area d-flex justify-content-between">
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/l8.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/l9.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/l10.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/l11.png' %}" alt="">
+                            </div>
+                            <div class="card-pic">
+                                <img src="{% static 'img/card/l12.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon slider-btn first-slider-btn" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon slider-btn second-slider-btn" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===================================== 6th section end ===================================== -->
+{% endblock %}

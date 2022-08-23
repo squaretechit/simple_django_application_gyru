@@ -1,0 +1,1102 @@
+@font-face {
+    font-family: future;
+    src: url(/static/font/FuturaPTBook.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'futura-pt', Helvetica, Arial, Lucida, sans-serif;
+    font-family: future;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+#backToTopBtn {
+    display: none;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 0;
+    top: 80%;
+    background-color: #FFC435;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTopBtn svg {
+    height: 100%;
+    width: 100%;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.2em;
+    line-height: 30px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Base Html */
+
+
+/* header start */
+
+header {
+    background-color: #000000;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+.navbar {
+    padding: 9px 0 !important;
+}
+
+.logo {
+    width: 87px;
+    height: 64px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background: transparent !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.menu-link {
+    display: flex;
+    margin-right: 25px;
+    color: #ffffff;
+    font-size: 14px;
+    transition: .4s;
+    text-transform: uppercase;
+}
+
+.menu-link:hover {
+    text-decoration: none;
+    color: #ffffff93;
+}
+
+.active {
+    color: #FCE33E;
+}
+
+/* First Section Start */
+.firstSec {
+    background-color: #FFDE59;
+}
+
+.firstSec img {
+    height: 100%;
+    width: 100%;
+}
+
+/* First Section End */
+
+/* Second Section Start */
+.secondSec {
+    position: relative;
+}
+
+.secondSec video {
+    height: 100%;
+    width: 100%;
+}
+
+.btnSecondSec {
+    position: absolute;
+    height: 150px;
+    width: 400px;
+    top: 260px;
+    right: 530px;
+}
+
+.btnSecondSec img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Second Section End */
+/* 4th section start */
+.learners-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.learners-img {
+    width: 30%;
+    height: 750px;
+}
+
+.learners-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.learners-documentation {
+    width: 69%;
+}
+
+.learners-first-section {
+    padding: 0 0 0 10%;
+}
+
+.learners-area-header {
+    font-size: 30px;
+    color: #263238;
+    font-weight: 600;
+}
+
+.yellow-color {
+    display: block;
+    width: 85px;
+    height: 4px;
+    background-color: #edf000;
+    margin: 10px 0 8px 0;
+}
+
+.learners-area-list {
+    margin-left: 20px;
+}
+
+.learners-area-list li {
+    margin: 4px 0;
+    font-size: 18px;
+    list-style-position: outside;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+/* --------------------------------------- */
+
+.learners-second-section {
+    margin-top: 50px;
+}
+
+.learners-area-list-two {
+    list-style-type: none;
+    padding-left: 8%;
+}
+
+.learners-area-list-two i {
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+/* 4th section end */
+
+/* 6th section start */
+
+.apps-prosses {
+    background-color: #fafafa;
+}
+
+.card-slider-wapper {
+    padding: 50px 8%;
+    position: relative;
+}
+
+.slider-btn {
+    background-color: #bcbcbc !important;
+    border-radius: 100%;
+    padding: 5px !important;
+    position: absolute !important;
+}
+
+.first-slider-btn {
+    top: 50% !important;
+    left: -6% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.second-slider-btn {
+    top: 50% !important;
+    right: -8% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.carousel-indicators {
+    bottom: -60px !important;
+}
+
+.carousel-indicators li {
+    width: 6px !important;
+    height: 6px !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    background-color: rgb(161, 24, 24) !important;
+    border-radius: 100% !important;
+}
+
+.cards-slider-area {
+    padding: 0 2%;
+}
+
+.card-pic {
+    width: 18%;
+}
+
+.card-pic img {
+    width: 100%;
+}
+
+/* 6th section end */
+
+/* footer section start */
+
+footer {
+    padding: 80px 0 40px 0;
+    background-color: #000000;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.about-gyru-footer {
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.footer-link {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.footer-link a {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 13px;
+    display: block;
+}
+
+.footer-link a:hover {
+    color: #ffffff;
+}
+
+.about-gyru-footer span {
+    margin-right: 20px;
+}
+
+.social-icon {
+    display: flex;
+}
+
+.social-icon a {
+    margin-right: 15px;
+    padding: 5px 10px;
+    background-color: #ffc435;
+    border-radius: 100%;
+}
+
+.social-icon a i {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.social-icon a i:hover {
+    color: #ffffff;
+}
+
+.copy-right {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+/* footer section end */
+
+
+/* about page */
+
+/* banner section start */
+
+.about-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(/static/img/bg/bg-copy-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-page-banner-section {
+    height: 100vh;
+    position: relative;
+}
+
+.about-banner-asrea {
+    text-align: center;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.about-page-blank-color {
+    height: 3px;
+    width: 80px;
+    background-color: #f7c434;
+    margin: auto;
+}
+
+.about-banner-asrea h4 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.about-banner-asrea p {
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+/* banner section end */
+
+/* 1st section start */
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.about-section-details {
+    width: 49%;
+}
+
+.about-section-img {
+    width: 70%;
+    height: 380px;
+    margin: auto;
+}
+
+.about-section-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-blank-line {
+    height: 3px;
+    width: 40px;
+}
+
+.y-c {
+    background-color: #ffc435;
+}
+
+.w-c {
+    background-color: #ffffff;
+}
+
+.about-section-details h2 {
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+.about-section-details p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.back-yellow {
+    background-color: #ffc435;
+}
+
+/* 1st section end */
+
+/* contact page */
+
+.contact-page-title {
+    padding: 70px 0;
+}
+
+.contact-page-title p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact-blank-line {
+    margin: auto;
+    width: 15%;
+}
+
+/* 1st section start */
+
+/* ----------------- form ------------ */
+
+.form-area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    width: 60%;
+}
+
+.location {
+    width: 30%;
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-email input {
+    width: 49%;
+}
+
+.subject {
+    display: block;
+    width: 100%;
+}
+
+.message {
+    width: 100%;
+    height: 150px;
+    background-color: #eeeeee;
+    padding: 10px 20px;
+    border: 1px solid #696969;
+    outline: none;
+    border-radius: 10px;
+}
+
+.contact-form input {
+    background-color: #eeeeee;
+    padding: 10px 20px;
+    border: 1px solid #696969;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.form-btn button {
+    background-color: #edf000;
+    padding: 12px 25px;
+    border: none;
+    outline: none !important;
+    border-radius: 25px;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.form-btn button:hover {
+    background-color: #f7c434;
+    color: #ffffff;
+}
+
+.math-validiation {
+    display: flex;
+    align-items: center;
+}
+
+#num1,
+#num2 {
+    margin-top: 3px;
+    background: transparent;
+    border: none;
+}
+
+.math-box input {
+    width: 50px;
+    padding: 8px 10px;
+    margin: 0 10px;
+}
+
+/* ------------------- location ---------------- */
+
+.location-icon {
+    margin-right: 20px;
+}
+
+.location-icon i {
+    font-size: 28px;
+    color: #ffc435;
+}
+
+.adress span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.adress p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* privacy page */
+
+.privacy-page-title {
+    padding: 70px 0;
+}
+
+.privacy-page-title p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.privacy-blank-line {
+    margin: auto;
+    width: 15%;
+}
+
+.privacy-sections {
+    margin: 40px 0 20px 0;
+}
+
+.privacy-sections-title {
+    margin-bottom: 28px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.privacy-sections-sub-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.privacy-sections-para {
+    margin-bottom: 14px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.privacy-sections-para li {
+    color: #000000 !important;
+    font-size: 16px;
+}
+
+.para-extra-margin {
+    margin: 50px 0;
+}
+
+.update-time {
+    font-size: 30px;
+    margin: 50px 0;
+}
+
+/* ******************************* end ******************************* */
+/* responsive CSS */
+@media screen and (max-width: 1440px) {
+    .btnSecondSec {
+        top: 175px;
+        right: 300px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .btnSecondSec {
+        top: 160px;
+        right: 230px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* ---------- 3th section start ---------- */
+
+    .second-banner-bigger-texts {
+        font-size: 240px;
+    }
+
+    .second-banner-texts span {
+        font-size: 45px;
+    }
+
+    .second-banner-texts {
+        font-size: 90px;
+    }
+
+    .about-page-banner-section {
+        height: 50vh;
+    }
+
+    .btnSecondSec {
+        top: 100px;
+        right: 160px;
+        height: 130px;
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    header {
+        padding: 10px 0;
+        height: 85px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 50px;
+    }
+
+    .navbar-nav.main-menu {
+        margin-top: 16px;
+        background-color: #000000;
+        padding: 40px;
+        z-index: 9999999 !important;
+    }
+
+    .banner-driving {
+        z-index: 1 !important;
+    }
+
+    .nav-item {
+        padding: 10px 25px;
+    }
+
+    .main-menu {
+        border-top: 3px solid #2ea3f2;
+    }
+
+    .menu-link {
+        color: #FCE33E;
+    }
+
+    .menu-link:hover {
+        color: rgba(252, 227, 62, 0.479);
+    }
+
+    /* --------- contact page -------- */
+
+    .contact-form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .btnSecondSec {
+        top: 85px;
+        right: 160px;
+        height: 100px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .first-section {
+        display: none;
+    }
+
+    .second-section {
+        display: block;
+    }
+
+    #button {
+        width: 40px;
+        height: 40px
+    }
+
+    #button::after {
+        font-size: 1em;
+    }
+
+    .banner {
+        padding: 36px 0
+    }
+
+    .banner-find-chat-book-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .banner-find-chat-book p {
+        font-size: 37px;
+        padding-left: 10px;
+    }
+
+    .banner-driving p {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .banner-scan-loca {
+        font-size: 35px;
+
+    }
+
+    .loca {
+        width: 45px;
+    }
+
+    .banner-scan-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .banner-scan-download {
+        font-size: 20px;
+    }
+
+    /* ------------- banner end -------------- */
+
+    .download-pic {
+        width: 470px;
+        height: 75px;
+        margin-right: 5%;
+    }
+
+    /* ---------- 3th section start ---------- */
+
+    .second-banner-bigger-texts {
+        font-size: 175px;
+    }
+
+    .second-banner-texts span {
+        font-size: 45px;
+    }
+
+    .second-banner-texts {
+        font-size: 66px;
+        line-height: 76px;
+        padding: 50px 50px 120px 80px;
+        color: #e44e40;
+    }
+
+    /* ---------- 4th section start ---------- */
+
+    .learners-img {
+        width: 39%;
+        height: 680px;
+    }
+
+    .learners-documentation {
+        width: 60%;
+    }
+
+    .learners-area-header {
+        font-size: 20px;
+    }
+
+    .learners-area-list li {
+        margin: 0px 0;
+        font-size: 15px;
+    }
+
+    /* --------- about page----------- */
+
+    .about-banner-asrea h4 {
+        font-size: 25px;
+    }
+
+
+    .about-page-banner-section {
+        height: 45vh;
+    }
+
+    .about-section-img {
+        width: 80%;
+        height: 315px;
+    }
+
+    .btnSecondSec {
+        top: 80px;
+        right: 135px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .btnSecondSec {
+        height: 60px;
+        width: 150px;
+        top: 65px;
+        right: 115px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .banner {
+        padding: 25px 0;
+    }
+
+    .banner-find-chat-book p {
+        font-size: 24px;
+    }
+
+    .banner-find-chat-book-img {
+        width: 34px;
+        height: 38px;
+    }
+
+    .banner-driving p {
+        font-size: 17px;
+        line-height: 20px;
+        border-top: 3px solid #f7c434;
+        border-bottom: 3px solid #f7c434;
+        padding: 9px 4px;
+        margin-top: 13px;
+    }
+
+    .banner-scan-loca {
+        font-size: 27px;
+        margin-right: 4px
+    }
+
+    .loca {
+        width: 30px;
+    }
+
+    .banner-scan-img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .banner-scan-download {
+        font-size: 15px;
+    }
+
+
+    /* ------------------------- banner end ---------------- */
+
+    .download-pic {
+        width: 470px;
+        height: 45px;
+        margin-right: 0%;
+        margin-top: 5%;
+    }
+
+    /* ---------- 3th section start ---------- */
+
+    .second-banner-bigger-texts {
+        font-size: 100px;
+    }
+
+    .second-banner-texts span {
+        font-size: 30px;
+    }
+
+    .second-banner-texts {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 50px 20px 50px 0px;
+    }
+
+    .col.bigger-texts {
+        padding-top: 50px;
+    }
+
+    /* ---------- 4th section start ---------- */
+
+    .learners-img {
+        width: 42%
+    }
+
+    .learners-documentation {
+        width: 57%;
+    }
+
+    .learners-area-list li {
+        font-size: 14px;
+    }
+
+    .learners-second-section {
+        margin-top: 25px;
+    }
+
+    .learners-first-section {
+        padding: 0 0 0 7%;
+    }
+
+    /* ---------- 6th section start ---------- */
+
+    .second-slider-btn {
+        right: -11% !important;
+    }
+
+    /* ---------- footer section start ---------- */
+
+    .footer {
+        padding: 0 40px;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .footer-link {
+        margin-top: 15px;
+    }
+
+    .copy-right {
+        margin-top: 0px;
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    /* --------- about page----------- */
+
+    .about-section {
+        flex-wrap: wrap;
+    }
+
+    .about-section-details {
+        width: 100%;
+    }
+
+    .cloum-rev {
+        flex-direction: column-reverse;
+    }
+
+    /* --------- contact page -------- */
+
+    .name-email {
+        flex-wrap: wrap;
+    }
+
+    .name-email input {
+        width: 100%;
+    }
+
+    .form-btn {
+        flex-wrap: wrap;
+    }
+
+    .math-validiation {
+        margin-bottom: 16px;
+    }
+
+    .btnSecondSec {
+        height: 50px;
+        width: 150px;
+        top: 45px;
+        right: 60px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .banner-find-chat-book-img {
+        width: 30px;
+        height: 34px;
+    }
+
+    .banner-scan-img {
+        margin: 0px;
+    }
+
+    /* ------------------------- banner end ---------------- */
+
+    .download-pic {
+        height: 34px;
+        margin-top: 3%;
+    }
+
+    /* ---------- 3rd section start ---------- */
+
+    .second-banner-texts span {
+        font-size: 20px;
+    }
+
+    .second-banner-texts {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    /* ---------- 4th section start ---------- */
+
+    .learners-img {
+        height: 460px;
+    }
+
+    .learners-area-header {
+        font-size: 15px;
+    }
+
+    .learners-area-list li {
+        font-size: 8px;
+    }
+
+    /* --------- about page----------- */
+    .about-banner-asrea {
+        top: 50%;
+    }
+
+    .btnSecondSec {
+        height: 45px;
+        width: 115px;
+        top: 40px;
+        right: 70px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .btnSecondSec {
+        height: 30px;
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .btnSecondSec {
+        right: 55px;
+        top: 35px;
+    }
+}

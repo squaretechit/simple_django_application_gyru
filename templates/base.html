@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYRU APP | {% block title %}{% endblock %}</title>
+    <!-- ================================= boostrap cnd css ================================== -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/freelesson.css' %}">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="{% static 'img/logo/logo.png' %}" type="image/x-icon">
+</head>
+
+<body oncontextmenu="return false">
+    <!-- ======================================= header start =========================================== -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="logo">
+                    <a href="{% url 'home' %}"><img src="{% static 'img/logo/logo.png' %}" alt="Main Logo"></a>
+                </div>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation" style="outline: none; border: none;">
+                    <span><i class="fas fa-bars" style=" font-size: 25px; color: #FCE33E;"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav main-menu">
+                        <li class="nav-item">
+                            <a class="menu-link {% if request.resolver_match.url_name == 'home' %} active {% endif %}" href="{% url 'home' %}">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="menu-link {% if request.resolver_match.url_name == 'about' %} active {% endif %}" href="{% url 'about' %}">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="menu-link {% if request.resolver_match.url_name == 'contact' %} active {% endif %}" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    {% block content %}{% endblock %}
+    <!-- footer section start  -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+
+                <div class="footer-section">
+                    <div class="logo">
+                        <a href="/"><img src="{% static 'img/logo/logo.png' %}" alt="Main Logo"></a>
+                    </div>
+                    <p class="about-gyru-footer">
+                        Our main concept is to connect the best driving instructors with the learners via a simple App.
+                        In any location where Gyru app operates, a user can easily find a driving instructor and start
+                        learning to drive.
+                    </p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/gyruapp/"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://www.facebook.com/GyruApp/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/GyruApp"><i class="fab fa-twitter"></i></a>
+                    </div>
+
+                </div>
+                <div class="footer-section">
+
+                    <h3>
+                        SHORT LINK
+                    </h3>
+
+                    <ul class="footer-link">
+
+                        <li><a href="{% url 'home' %}"> Home </a></li>
+                        <li><a href="{% url 'about' %}"> About Us</a></li>
+                        <li><a href="{% url 'policy' %}"> Privacy policy </a></li>
+                        <li><a href="{% url 'contact' %}"> Contact </a></li>
+
+                    </ul>
+
+                </div>
+                <div class="footer-section">
+                    <h3>
+                        CONTACT US
+                    </h3>
+                    <p class="about-gyru-footer">
+                        <span>Address:</span> The Gyru app ltd, Chislehurst, London, <br> BR75NL <br>
+                        <span>Email:</span> gyruapp@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+            <p class="copy-right">
+                COPYRIGHT © 2020 GYRU APP.
+            </p>
+
+        </div>
+    </footer>
+    <div id="backToTopBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+          </svg>
+    </div>
+    <!-- footer section end -->
+    <!--============================= fontawesome CDN icon ============================-->
+
+    <script src="https://kit.fontawesome.com/bdb42816d8.js" crossorigin="anonymous"></script>
+    <!-- boostrap js CDN link -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- ===================================== google boostrap js CDN link ===================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- ===================================== main ===================================== -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    //Stop Inspect Element
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+
+});
+    </script>
+
+</body>
+
+</html>

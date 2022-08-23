@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+<!-- ===================================== title section end ===================================== -->
+<div class="container">
+    <div class="contact-page-title">
+        <p>
+            GET IN TOUCH
+        </p>
+        <div class="about-blank-line y-c contact-blank-line"></div>
+    </div>
+</div>
+<!-- ===================================== 1st section start ===================================== -->
+<div class="container pb-5">
+    <div class="form-area">
+        <div class="contact-form">
+            {% for message in messages %}
+            <p class="text-center">{{message}}</p>
+            {% endfor %}
+            <form action="{% url 'contact' %}" method="POST">
+                {% csrf_token %}
+                <div class="name-email">
+                    <input type="text" placeholder="Your Name" required name="name">
+                    <input type="email" placeholder="Your Email" required name="email">
+                </div>
+                <input class="subject" type="text" placeholder="Subject" required name="subject">
+                <textarea class="message" name="text" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <div class="form-btn">
+
+                    <div class="math-validiation">
+                        <div class="math-box">
+                            <input type="button" id="num1">
+                        </div>
+                        <div class="plus-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="math-box">
+                            <input type="button" id="num2">
+                        </div>
+                        <div class="plus-icon">
+                            <div class="plus-icon">
+                                <i class="fas fa-equals"></i>
+                            </div>
+                        </div>
+                        <div class="math-box">
+                            <input type="text" id="equale">
+                        </div>
+                    </div>
+
+                    <button type="submit">SEND MESSAGE</button>
+                </div>
+            </form>
+        </div>
+        <div class="location">
+            <div class="d-flex">
+                <div class="location-icon">
+                    <i class="fas fa-map"></i>
+                </div>
+                <div class="adress">
+                    <span> Location </span>
+                    <p>The Gyru app ltd , Ruthland Court, Chislehurst , London, BR75NL</p>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="location-icon">
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="adress">
+                    <span> E-mail </span>
+                    <p>gyruapp@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let numberBox1 = Math.floor(Math.random() * 10 + 1);
+    let numberBox2 = Math.floor(Math.random() * 10 + 1);
+    document.getElementById('num1').value = numberBox1;
+    document.getElementById('num2').value = numberBox2;
+</script>
+{% endblock %}

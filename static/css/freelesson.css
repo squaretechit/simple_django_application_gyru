@@ -1,0 +1,20 @@
+.firstLesson{
+    background-color: #FFC435;
+}.firstLesson img{
+    height: 100%;
+    width: 100%;
+}
+.signup-btn{
+    background-color: #000000;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    outline: none !important;
+    border-radius: 25px;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+.cus-form{
+    width: 600px;
+    margin: 0 auto;
+}
