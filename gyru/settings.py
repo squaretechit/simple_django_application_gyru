@@ -5,8 +5,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '76v6rffghc(9eaurc^w4hwy-@*hb%35wl0yndvo1qw3c!4%m1q'
 
 DEBUG = False
-ALLOWED_HOSTS = ['gyru.co.uk','www.gyru.co.uk','138.68.150.44']
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -90,7 +89,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #Email options webserver
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'admin@gyru.co.uk'
-EMAIL_HOST_PASSWORD = 'uM3]g%$WdDKJ'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
